@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parciap</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- LOGIC -->
+    <script type="module" src="./assets/js/app.js"></script>
+</head>
+<body>
+    <div id="main_container">
+        <h1>Primer Parcial</h1>
+        
+        <div id="filtros_container">
+            <h2>Form Datos</h2>
+
+            <div class="row">
+                <label for="filtro_tipo">Tipo:</label>
+                <select name="filtro_tipo" id="filtro_tipo">
+                    <option value="todos">Todos</option>
+                    <option value="aereo">Aereo</option>
+                    <option value="terrestre">Terrestre</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="filtro_id">id</label>
+                <input type="checkbox" id="filtro_id">
+
+                <label for="filtro_modelo">modelo</label>
+                <input type="checkbox" id="filtro_modelo">
+
+                <label for="filtro_anoFab">año fab</label>
+                <input type="checkbox" id="filtro_anoFab">
+
+                <label for="filtro_velMax">vel max</label>
+                <input type="checkbox" id="filtro_velMax">
+
+                <label for="filtro_altMax">alt max</label>
+                <input type="checkbox" id="filtro_altMax">
+
+                <label for="filtro_autonomia">autonomia</label>
+                <input type="checkbox" id="filtro_autonomia">
+
+                <label for="filtro_cantPue">cant pue</label>
+                <input type="checkbox" id="filtro_cantPue">
+
+                <label for="filtro_cantRue">cant rue</label>
+                <input type="checkbox" id="filtro_cantRue">
+            </div>
+            <div class="row">
+                <label for="txb_promedio">Calcular Promedio</label>
+                <input type="text" id="txb_promedio">
+                <button id="btn_promedio">Calcular</button>
+            </div>
+        </div>
+        <!-- TABLA DATOS -->
+        <table id="tabla_datos">
+            <thead>
+                <tr>
+                    <th><button>id</button></th>
+                    <th><button>modelo</button></th>
+                    <th><button>vel max</button></th>
+                    <th><button>alt max</button></th>
+                    <th><button>autonomia</button></th>
+                    <th><button>cant pue</button></th>
+                    <th><button>cant rue</button></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="modal_abm">
+            <h2>Form ABM</h2>
+            <div id="controls_container">
+                <div class="filtro">
+                    <label for="abm_id">ID:</label>
+                    <input type="text" id="abm_id">
+                </div>
+                <div class="filtro">
+                    <label for="abm_modelo">Modelo:</label>
+                    <input type="text" id="abm_modelo">
+                </div>
+                <div class="filtro">
+                    <label for="abm_anoFab">Año Fabricacion:</label>
+                    <input type="text" id="abm_anoFab">
+                </div>
+                <div class="filtro">
+                    <label for="abm_velMax">Velocidad Maxima:</label>
+                    <input type="text" id="abm_velMax">
+                </div>
+                <div class="filtro">
+                    <label for="abm_tipo">Tipo:</label>
+                    <select name="abm_tipo" id="abm_tipo">
+                        <option value="aereo">Aereo</option>
+                        <option value="terrestre">Terrestre</option>
+                    </select>
+                </div>
+                <div class="filtro">
+                    <label for="abm_altMax">Altura Maxima:</label>
+                    <input type="text" id="abm_altMax">
+                </div>
+                <div class="filtro">
+                    <label for="abm_autonomia">Autonomia:</label>
+                    <input type="text" id="abm_autonomia">
+                </div>
+                <div class="filtro">
+                    <label for="abm_cantRue">Cantidad Puertas:</label>
+                    <input type="text" id="abm_cantRue">
+                </div>
+                <div class="filtro">
+                    <label for="abm_cantPue">Cantidad Ruedas:</label>
+                    <input type="text" id="abm_cantPue">
+                </div>
+                
+                <div class="acciones">
+                    <button id="btn_agregar">Agregar</button>
+                    <button id="btn_modificar">Modificar</button>
+                    <button id="btn_eliminar">Eliminar</button>
+                    <button id="btn_cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
